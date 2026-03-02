@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Diego Pérez - Full Stack Developer">
+    <title>Diego Pérez | Full Stack Developer</title>
+    <!-- Link al archivo CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Fonts: Playfair Display (Serif) y Inter (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons para íconos modernos -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <!-- Cursor Personalizado -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Nav con Glassmorphism -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Diego.</a>
+
+            <!-- Menú de enlaces -->
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+            </ul>
+
+            <!-- Botón de Contacto (Glassmorphism también, o primario) -->
+            <a href="#contact" class="btn btn-outline">Hablemos</a>
+
+            <!-- Menú Hamburguesa para móviles -->
+            <div class="hamburger">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle">Hola, soy</p>
+                <h1 class="hero-title">Diego <br> <span class="accent-text">Pérez</span></h1>
+                <p class="hero-description">
+                    Desarrollador <span class="highlight">Full Stack</span> apasionado por construir experiencias
+                    digitales estéticas, robustas y memorables.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos <i class="ph ph-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <!-- Imagen abstracta 3D o retrato al estilo del primer mockup -->
+                <div class="hero-image glass-card reveal">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+                        alt="Abstract 3D Shape">
+                    <div class="hero-glow"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemento de Scroll Down animado -->
+        <div class="scroll-indicator">
+            <p>Scroll</p>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="about section">
+        <div class="container section-grid">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">El <br> Desarrollador</h2>
+            </div>
+            <div class="section-content">
+                <p class="large-text">
+                    Transformando ideas en <span class="accent-text">código</span> y problemas en <span
+                        class="white-text">soluciones.</span>
+                </p>
+                <div class="about-details">
+                    <p>
+                        Mi enfoque principal es construir aplicaciones escalables y eficientes, sin descuidar nunca la
+                        identidad visual y la experiencia del usuario. Trabajo con tecnologías modernas, asegurando que
+                        cada línea de código aporte valor real al proyecto.
+                    </p>
+                    <p>
+                        Actualmente sigo aprendiendo y perfeccionando mis habilidades como Full Stack Junior, enfocado
+                        en dominar tanto el Frontend (HTML, CSS, JS) como el Backend.
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item glass-card">
+                        <h3 class="stat-number">1+</h3>
+                        <p class="stat-label">Años de Exp.</p>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <h3 class="stat-number">10+</h3>
+                        <p class="stat-label">Proyectos</p>
+                    </div>
+                    <div class="stat-item glass-card">
+                        <h3 class="stat-number">UI/UX</h3>
+                        <p class="stat-label">Enfoque Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="skills section bg-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mi<br>Stack</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category glass-card">
+                    <div class="skill-header">
+                        <i class="ph ph-browsers style-icon"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3 (Flexbox/Grid)</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Diseño UI/UX</li>
+                    </ul>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category glass-card">
+                    <div class="skill-header">
+                        <i class="ph ph-database style-icon"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Node.js (En progreso)</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="skill-category glass-card">
+                    <div class="skill-header">
+                        <i class="ph ph-wrench style-icon"></i>
+                        <h3>Herramientas</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>Visual Studio Code</li>
+                        <li>Figma (Básico)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="projects section">
+        <div class="container section-grid">
+
+            <!-- Columna Izquierda: Título Pegajoso -->
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Obras<br>Recientes</h2>
+            </div>
+
+            <!-- Columna Derecha: Contenido y Lista de Proyectos -->
+            <div class="section-content">
+                <div class="project-list">
+                    <!-- Proyecto 1 -->
+                    <div class="project-item reveal">
+                        <div class="project-image glass-card">
+                            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=2000&auto=format&fit=crop"
+                                alt="Proyecto Coderhouse Web Design">
+                            <div class="project-overlay">
+                                <a href="#" target="_blank" class="btn btn-primary btn-round"><i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Primer Portfolio Coderhouse</h3>
+                            <ul class="project-tags">
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>UI/UX</li>
+                            </ul>
+                            <p class="project-desc">Diseño inicial y maquetación de portfolio personal enfocada en
+                                estructura básica y estilos SCSS.</p>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="project-item reveal delay-1">
+                        <div class="project-image glass-card">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000&auto=format&fit=crop"
+                                alt="Proyecto Web App">
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-primary btn-round"><i class="ph ph-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Aplicación Web Interactiva</h3>
+                            <ul class="project-tags">
+                                <li>JavaScript</li>
+                                <li>DOM</li>
+                                <li>Interacciones</li>
+                            </ul>
+                            <p class="project-desc">Desarrollo de una interfaz dinámica utilizando JavaScript puro para
+                                la manipulación del DOM y validación de datos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección interna de Servicios Oblicuos o Extras (Glassmorphism) -->
+    <section id="services" class="services section bg-darker">
+        <div class="container services-wrapper">
+            <div class="section-header">
+                <h2 class="section-title">Qué<br>Ofrezco</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card glass-card reveal">
+                    <i class="ph ph-code style-icon"></i>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación de sitios web desde cero, landing pages atractivas y portfolios optimizados para
+                        convertir visitantes en clientes.</p>
+                </div>
+                <div class="service-card glass-card reveal delay-1">
+                    <i class="ph ph-wrench style-icon"></i>
+                    <h3>Mantenimiento</h3>
+                    <p>Actualizaciones de código, mejoras de rendimiento y solución de errores para que tu web siempre
+                        funcione al 100%.</p>
+                </div>
+                <div class="service-card glass-card reveal delay-2">
+                    <i class="ph ph-chats-teardrop style-icon"></i>
+                    <h3>Comunicación Clara</h3>
+                    <p>Te mantengo informado paso a paso. Se habla tu idioma, sin tecnicismos innecesarios, para que
+                        siempre sepas en qué estado está tu proyecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact section">
+        <div class="container" style="max-width: 800px; text-align: center;">
+            <div class="contact-info reveal">
+                <h2 class="section-title">Hagamos algo<br><span class="accent-text">Increíble.</span></h2>
+                <p class="contact-text">¿Tienes un proyecto en mente o simplemente quieres saludar? La forma más rápida
+                    de hablar conmigo es a través de WhatsApp.</p>
+
+                <!-- Botón Principal Whatsapp -->
+                <div style="margin-bottom: 4rem;">
+                    <a href="https://wa.me/5492625647316" target="_blank" class="btn btn-primary"
+                        style="font-size: 1.2rem; padding: 1.2rem 3rem; border-radius: 50px;">
+                        <i class="ph ph-whatsapp-logo" style="font-size: 1.5rem;"></i> Iniciar Chat en WhatsApp
+                    </a>
+                </div>
+
+                <!-- Contactos Secundarios -->
+                <div class="contact-links"
+                    style="flex-direction: row; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+                    <a href="mailto:diegojpm2001@gmail.com" class="contact-link">
+                        <i class="ph ph-envelope-simple"></i> Email
+                    </a>
+                    <a href="https://github.com/diegoperez-3" target="_blank" class="contact-link">
+                        <i class="ph ph-github-logo"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/diego-javier-perez-84575a350/" target="_blank" class="contact-link">
+                        <i class="ph ph-linkedin-logo"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Diego.</div>
+            <p class="copyright">© 2026 Diego Pérez. Todos los derechos reservados.</p>
+            <div class="footer-social">
+                <a href="#"><i class="ph ph-github-logo"></i></a>
+                <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link al archivo JS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
